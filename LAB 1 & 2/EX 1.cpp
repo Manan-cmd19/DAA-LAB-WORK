@@ -14,10 +14,8 @@ int insertion_sort(int a[]){
         while(j >= 0 && (++c, a[j] > k)){
             a[j + 1] = a[j];
             j--;
-        }
-        a[j + 1] = k;
-    }
-    return c;
+        }a[j + 1] = k;
+    }return c;
 }
 int selection_sort(int a[]){
     int c = 0;
@@ -27,8 +25,7 @@ int selection_sort(int a[]){
             if(a[j] < a[min])
                 min = j;
         mySwap(a[i], a[min]);
-    }
-    return c;
+    }return c;
 }
 int bubble_sort(int a[]){
     int c = 0;
@@ -38,10 +35,8 @@ int bubble_sort(int a[]){
             if(a[j] > a[j + 1]){
                 mySwap(a[j], a[j + 1]);
                 swapped = true;
-            }
-        if(!swapped) break;
-    }
-    return c;
+            }if(!swapped) break;
+    }return c;
 }
 void reverse_array(int a[]){
     for(int i = 0; i < n / 2; i++)
